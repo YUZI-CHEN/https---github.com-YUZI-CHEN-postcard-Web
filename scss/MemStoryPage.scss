@@ -1,0 +1,159 @@
+@use 'reset';
+
+#MemStoryPage {
+    width: 100%;
+    background-color: #F2E9D4;
+    overflow: hidden;
+
+    #MemStoryPage-main {
+        height: 82vh;
+    }
+}
+
+/* 內容區 */
+/* 左邊 */
+#MemStoryPage-main {
+    display: flex;
+    justify-content: space-around;
+
+    #MSP-Section1 {
+        width: 50%;
+        position: relative;
+
+        #backToMemStory {
+            position: absolute;
+            width: 10%;
+            top: 60px;
+            left: 60px;
+        }
+
+        #MSP-Section1-img1 {
+            z-index: 997;
+            width: 70%;
+            height: 55%;
+            position: absolute;
+            top: 140px;
+            left: 250px;
+        }
+
+        #MSP-Section1-img2 {
+            z-index: 998;
+            width: 70%;
+            height: 52%;
+            position: absolute;
+            top: 150px;
+            left: 230px;
+            transform: rotate(-2deg);
+        }
+
+        #MSP-Section1-img3 {
+            z-index: 999;
+            width: 60%;
+            height: 42%;
+            position: absolute;
+            top: 190px;
+            left: 280px;
+        }
+
+        #MSP-Section1-img4 {
+            z-index: 998;
+            position: absolute;
+            width: 180px;
+            top: 0;
+            right: -80px;
+            transform: rotate(30deg);
+        }
+
+        #MSP-Section1-img5 {
+            z-index: 999;
+            position: absolute;
+            width: 130px;
+            top: 135px;
+            right: 35px;
+            transform: rotate(15deg);
+        }
+
+        #MSP-Section1-img6 {
+            z-index: 999;
+            position: absolute;
+            width: 140px;
+            top: 170px;
+            left: 240px;
+        }
+
+        #MSP-Section1-img7 {
+            z-index: 999;
+            position: absolute;
+            width: 100px;
+            top: 120px;
+            left: 290px;
+        }
+
+        #MSP-Section1-img8 {
+            z-index: 999;
+            position: absolute;
+            width: 100px;
+            top: 120px;
+            left: 360px;
+        }
+
+        #MSP-Section1-img9 {
+            z-index: 998;
+            position: absolute;
+            width: 150px;
+            bottom: 100px;
+            left: 150px;
+        }
+
+        #MSP-Section1-img10 {
+            z-index: 998;
+            position: absolute;
+            width: 100px;
+            bottom: 70px;
+            left: 225px;
+        }
+
+        #MSP-Section1-img11 {
+            z-index: 999;
+            position: absolute;
+            width: 150px;
+            bottom: 30px;
+            left: 110px;
+        }
+    }
+
+    #MSP-Section2 {
+        width: 50%;
+        position: relative;
+
+        #MSP-Section2-img1 {
+            z-index: 997;
+            width: 80%;
+            height: 100%;
+            position: absolute;
+            top: -5%;
+            right: 15%;
+        }
+
+        #MSP-Section2-img2 {
+            z-index: 998;
+            width: 13%;
+            position: absolute;
+            top: -10px;
+            right: 140px;
+        }
+
+        #MSP-Section2-p {
+            z-index: 998;
+            position: absolute;
+            top: 14%;
+            left: 21%;
+            letter-spacing: 4.5px;
+            line-height: 200%;
+            text-align: justify;
+            font-size: 1.05vw;
+            font-family: "Noto Sans TC", serif;
+            color: #464646;
+        }
+    }
+}

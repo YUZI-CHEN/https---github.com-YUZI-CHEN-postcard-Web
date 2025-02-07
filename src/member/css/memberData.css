@@ -1,0 +1,671 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 重置標題字重 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+/* 重置清單符號 */
+ol,
+ul {
+  list-style: none;
+}
+
+/* 重置圖片 */
+img {
+  display: block;
+  width: 100%;
+}
+
+/* 重置連接 */
+a {
+  display: block;
+  /* 將a預設inline改為block，才能設定間距及寬高 */
+  color: #222;
+  text-decoration: none;
+}
+
+#memberData {
+  font-family: "Noto Sans TC", serif;
+  line-height: 1.2;
+  background-image: url(../images/background.png);
+}
+
+/* reset end */
+/* 首頁區 */
+#memberData-main {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+/* 左上區塊 */
+#md-about-box {
+  position: absolute;
+  background-image: url("../images/p4-papers-2.jpg");
+  width: 39.06vw;
+  height: 43vh;
+  background-position: 10% 50%;
+  top: 12%;
+  left: 10%;
+  display: flex;
+  /* 郵票圖 */
+  /* 照片外框 */
+  /* 個人照片 */
+}
+#md-about-box img {
+  width: 5.52vw;
+  height: 13.52vh;
+  margin: 5px;
+}
+#md-about-box .md-frame {
+  z-index: 999;
+  padding: 10px 0;
+}
+#md-about-box .md-frame img {
+  width: 15.1vw;
+  height: 28vh;
+  transform: rotate(90deg);
+}
+#md-about-box .md-person-pt {
+  position: absolute;
+  left: 29%;
+  top: 15px;
+  padding: 10px 0;
+}
+#md-about-box .md-person-pt img {
+  width: 7.81vw;
+  height: 25vh;
+}
+
+/* 個人照片下的id */
+.md-person-id {
+  position: absolute;
+  left: 28%;
+  top: 70%;
+  width: 9.38vw;
+  height: 8.33vh;
+  background-image: url("../images/small_paper.png");
+  background-size: 100%;
+}
+.md-person-id p {
+  position: absolute;
+  font-size: 1rem;
+  top: 40%;
+  left: 15%;
+  color: #464646;
+}
+
+@media (max-width: 1680px) {
+  #md-about-box .md-person-pt {
+    left: 28%;
+    top: 6%;
+  }
+  #md-about-box .md-person-pt img {
+    width: 9.5vw;
+    height: 22.5vh;
+  }
+}
+@media (max-width: 1440px) {
+  .md-person-id p {
+    font-size: 0.875rem;
+  }
+}
+/* 個人照片左邊內容區塊 */
+#md-p-content {
+  margin-top: 30px;
+  /* 地區 */
+  /* 收件 */
+  /* 寄件 */
+  /* 地區、收件、寄件內容區塊的設計 */
+}
+#md-p-content .md-p01 {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+#md-p-content .md-p01 img {
+  margin: 0 10px;
+  width: 2.6vw;
+  height: 4.63vh;
+}
+#md-p-content .md-p02 {
+  display: flex;
+  margin: 40px 0;
+}
+#md-p-content .md-p02 img {
+  margin: 0 10px;
+  width: 2.6vw;
+  height: 4.63vh;
+}
+#md-p-content .md-p03 {
+  display: flex;
+  margin: 40px 0;
+}
+#md-p-content .md-p03 img {
+  margin: 0 10px;
+  width: 2.6vw;
+  height: 4.63vh;
+}
+#md-p-content .md-p-box {
+  background-image: url("../images/btn-1.jpg");
+  background-size: contain;
+  margin: 5px 20px;
+  width: 6.77vw;
+  height: 4vh;
+  text-align: center;
+}
+#md-p-content .md-p-box p {
+  height: 100%;
+  line-height: 40px;
+  font-size: 1.125rem;
+  color: #464646;
+}
+
+@media (max-width: 1440px) {
+  #md-p-content .md-p-box p {
+    height: 100%;
+    line-height: 30px;
+    font-size: 1.125rem;
+    color: #464646;
+  }
+}
+/*  最右邊關於我的內容區塊 */
+#md-about-content {
+  position: absolute;
+  right: 14%;
+  top: 13%;
+  display: flex;
+  flex-direction: column;
+}
+#md-about-content .item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+#md-about-content .item img {
+  margin: 0 20px;
+  width: 3.13vw;
+  height: 6.5vh;
+}
+#md-about-content .md-item-content {
+  position: relative;
+  background-image: url("../images/p4-papers-1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 31.25vw;
+  height: 35vh;
+}
+#md-about-content .md-item-content p {
+  position: absolute;
+  width: 20.83vw;
+  height: 18.52vh;
+  top: 20%;
+  left: 15%;
+  font-size: 1.125rem;
+  color: #464646;
+  letter-spacing: 10px;
+  line-height: 40px;
+}
+
+@media (max-width: 1440px) {
+  #md-about-content .md-item-content p {
+    font-size: 1rem;
+    color: #464646;
+    letter-spacing: 5px;
+    line-height: 40px;
+  }
+}
+/* 下方明信片區塊 */
+#md-postcard {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 15%;
+  bottom: 20%;
+}
+#md-postcard .md-postcard-p {
+  width: auto;
+  margin-right: 20px;
+}
+#md-postcard .md-postcard-p p {
+  font-size: 1.125rem;
+  color: #464646;
+  letter-spacing: 5px;
+}
+#md-postcard .md-pc-img01 {
+  position: relative;
+  margin-right: 70px;
+}
+#md-postcard .md-pc-img01 .md-pc-frame {
+  width: 14.58vw;
+  height: 16vh;
+}
+#md-postcard .md-pc-img01 .md-pcs {
+  position: absolute;
+  bottom: 35%;
+  left: 9%;
+  width: 11.98vw;
+  height: 8.5vh;
+  z-index: -1;
+}
+#md-postcard .md-pc-img02 {
+  position: relative;
+  margin-right: 70px;
+}
+#md-postcard .md-pc-img02 .md-pc-frame {
+  width: 14.58vw;
+  height: 16vh;
+}
+#md-postcard .md-pc-img02 .md-pcs {
+  position: absolute;
+  bottom: 35%;
+  left: 9%;
+  width: 11.98vw;
+  height: 8.5vh;
+  z-index: -1;
+}
+#md-postcard .md-pc-img03 {
+  position: relative;
+}
+#md-postcard .md-pc-img03 .md-pc-frame {
+  width: 14.58vw;
+  height: 16vh;
+}
+#md-postcard .md-pc-img03 .md-pcs {
+  position: absolute;
+  bottom: 35%;
+  left: 9%;
+  width: 11.98vw;
+  height: 8.5vh;
+  z-index: -1;
+}
+
+@media (max-width: 1680px) {
+  #md-postcard .md-pc-img01 .md-pcs {
+    bottom: 37%;
+  }
+  #md-postcard .md-pc-img02 .md-pcs {
+    bottom: 37%;
+  }
+  #md-postcard .md-pc-img03 .md-pcs {
+    bottom: 37%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  #md-about-box {
+    width: 65vw;
+    height: 30vh;
+    top: 10%;
+    left: 20%;
+    display: flex;
+    /* 郵票圖 */
+    /* 照片外框 */
+    /* 個人照片 */
+    /* 個人照片下的id */
+  }
+  #md-about-box img {
+    width: 10vw;
+    height: 10vh;
+    margin: 5px;
+  }
+  #md-about-box .md-frame {
+    z-index: 999;
+    padding: 45px 0;
+  }
+  #md-about-box .md-frame img {
+    width: 20vw;
+    height: 15vh;
+    transform: rotate(90deg);
+  }
+  #md-about-box .md-person-pt {
+    left: 27%;
+    top: 50px;
+  }
+  #md-about-box .md-person-pt img {
+    width: 12vw;
+    height: 12.5vh;
+  }
+  #md-about-box .md-person-id {
+    left: 23%;
+    top: 70%;
+    width: 18vw;
+    height: 6vh;
+    background-image: url("../images/small_paper.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  #md-about-box .md-person-id p {
+    font-size: 0.875rem;
+    top: 40%;
+    left: 15%;
+  }
+  /* 個人照片左邊內容區塊 */
+  #md-p-content {
+    margin-top: 30px;
+    /* 地區 */
+    /* 收件 */
+    /* 寄件 */
+    /* 地區、收件、寄件內容區塊的設計 */
+  }
+  #md-p-content .md-p01 {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+  }
+  #md-p-content .md-p01 img {
+    margin: 0 10px;
+    width: 4.5vw;
+    height: 3vh;
+  }
+  #md-p-content .md-p02 {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  #md-p-content .md-p02 img {
+    margin: 0 10px;
+    width: 4.5vw;
+    height: 3vh;
+  }
+  #md-p-content .md-p03 {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+  }
+  #md-p-content .md-p03 img {
+    margin: 0 10px;
+    width: 4.5vw;
+    height: 3vh;
+  }
+  #md-p-content .md-p-box {
+    margin: 10px 20px;
+    width: 10vw;
+    height: 3vh;
+  }
+  #md-p-content .md-p-box p {
+    line-height: 28px;
+    font-size: 0.875rem;
+  }
+  #md-about-content {
+    right: 22%;
+    top: 42%;
+  }
+  #md-about-content .item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  #md-about-content .item img {
+    margin: 0 20px;
+    width: 6vw;
+    height: 7.5vh;
+  }
+  #md-about-content .md-item-content {
+    width: 50vw;
+    height: 35vh;
+  }
+  #md-about-content .md-item-content p {
+    width: 35vw;
+    height: 15vh;
+    top: 13%;
+    left: 15%;
+    font-size: 0.875rem;
+    letter-spacing: 5px;
+    line-height: 40px;
+  }
+  /* 下方明信片區塊 */
+  #md-postcard {
+    position: absolute;
+    left: 10%;
+    bottom: 7%;
+  }
+  #md-postcard .md-postcard-p {
+    margin-right: 20px;
+  }
+  #md-postcard .md-postcard-p p {
+    font-size: 0.875rem;
+    letter-spacing: 5px;
+  }
+  #md-postcard .md-pc-img01 {
+    position: relative;
+    margin-right: 15px;
+    margin-top: 60px;
+  }
+  #md-postcard .md-pc-img01 .md-pc-frame {
+    width: 14.58vw;
+    height: 14vh;
+  }
+  #md-postcard .md-pc-img01 .md-pcs {
+    bottom: 35%;
+    left: 9%;
+    width: 11.98vw;
+    height: 8.5vh;
+  }
+  #md-postcard .md-pc-img02 {
+    margin-right: 15px;
+    margin-top: 60px;
+  }
+  #md-postcard .md-pc-img02 .md-pc-frame {
+    width: 14.58vw;
+    height: 14vh;
+  }
+  #md-postcard .md-pc-img02 .md-pcs {
+    bottom: 35%;
+    left: 9%;
+    width: 11.98vw;
+    height: 8.5vh;
+    z-index: -1;
+  }
+  #md-postcard .md-pc-img03 {
+    position: relative;
+    margin-top: 60px;
+  }
+  #md-postcard .md-pc-img03 .md-pc-frame {
+    width: 14.58vw;
+    height: 14vh;
+  }
+  #md-postcard .md-pc-img03 .md-pcs {
+    bottom: 35%;
+    left: 9%;
+    width: 11.98vw;
+    height: 8.5vh;
+  }
+}
+.md-img01 {
+  position: absolute;
+  width: 13.02vw;
+  height: 20.37vh;
+  bottom: 20%;
+  left: 5%;
+}
+
+.md-img02 {
+  position: absolute;
+  width: 8.33vw;
+  height: 8.15vh;
+  left: 45%;
+  top: 48%;
+  transform: rotate(-10deg);
+}
+
+.md-img03 {
+  position: absolute;
+  width: 13.02vw;
+  height: 20.37vh;
+  top: 10%;
+  left: 47%;
+}
+
+.md-img04 {
+  position: absolute;
+  width: 7.81vw;
+  height: 13.89vh;
+  top: 42%;
+  right: 15%;
+  transform: rotate(-10deg);
+}
+
+.md-img05 {
+  position: absolute;
+  width: 11.98vw;
+  height: 21.3vh;
+  bottom: 15%;
+  right: 10%;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 1680px) {
+  .md-img05 {
+    right: 7%;
+  }
+}
+@media (max-width: 1440px) {
+  .md-img05 {
+    right: 3%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .md-img01 {
+    width: 20vw;
+    height: 22vh;
+    bottom: 20%;
+    left: 10%;
+  }
+  .md-img02 {
+    width: 10vw;
+    height: 11vh;
+    left: 80%;
+    top: 37%;
+  }
+  .md-img03 {
+    width: 12vw;
+    height: 18vh;
+    top: 32%;
+    left: 65%;
+  }
+  .md-img04 {
+    width: 7.81vw;
+    height: 13.89vh;
+    top: 65%;
+    right: 20%;
+  }
+  .md-img05 {
+    width: 20vw;
+    height: 30vh;
+    bottom: 25%;
+    right: 0;
+    transform: rotate(-45deg);
+  }
+}
+/* 頁尾區 */
+.memberData-footer {
+  display: inline-block;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  /* background-color: #E2CA9E; */
+  width: 100%;
+  height: 65px;
+  letter-spacing: 3px;
+  color: #464646;
+}/*# sourceMappingURL=memberData.css.map */

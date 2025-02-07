@@ -1,0 +1,620 @@
+@use 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Mallanna&family=Mansalva&family=Noto+Serif+TC:wght@200..900&display=swap');
+
+#MainPage {
+    width: 100%;
+    height: 265vh;
+    background-color: #F2E9D4;
+}
+
+@font-face {
+    font-family: "ChenYuluoyan";
+    src: url("./fonts/ChenYuluoyan-Thin.ttf") format("truetype");
+}
+
+/* 頁首區 */
+.topbar {
+    width: 100%;
+    display: flex; // 主軸方向：水平
+    justify-content: space-between; // 主軸水平左右均分
+    align-items: center; // 副軸垂直置中
+    padding: 0 50px;
+
+    .logo {
+        display: flex;
+        position: relative;
+
+        .img-logo {
+            width: 250px;
+            position: absolute;
+            left: -50px;
+            top: -50px;
+        }
+
+        h1 {
+            position: absolute;
+            width: 100px;
+            top: 0px;
+            left: 40px;
+            letter-spacing: 2px;
+            color: #464646;
+        }
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .menu {
+            display: flex;
+            padding: 0 10px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+
+            a {
+                margin: 15px;
+                padding: 7px 0 5px;
+                border-bottom: 2px solid transparent;
+                transition: 0.4s;
+                text-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+                color: #464646;
+
+                &:hover {
+                    color: #ffcc00;
+                    border-bottom: 2px solid transparent;
+                }
+            }
+        }
+    }
+}
+
+/* 內容區 */
+/* 第一層 */
+#layer1 {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+    .layer1-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 55%;
+
+        .text-TW {
+            // width: 100%;
+            font-family: "ChenYuluoyan", sans-serif;
+            font-size: 11.5vw;
+            color: #464646;
+            display: flex;
+            justify-content: center;
+
+            span {
+                display: inline-block;
+                margin: 0 30px;
+            }
+        }
+
+        .text-EN {
+            color: #464646;
+            font-family: "Mansalva", sans-serif;
+            font-size: 2vw;
+            letter-spacing: 6px;
+            text-align: right;
+            padding-left: 30px;
+            // right: -70px;
+            // bottom: -20px;
+        }
+    }
+
+    .stamp {
+        width: 20%;
+        height: auto;
+    }
+
+    .stampLeft {
+        width: 8%;
+        position: absolute;
+        top: 30%;
+        left: 23%;
+    }
+
+    .stampRight {
+        width: 6%;
+        position: absolute;
+        right: 25%;
+        top: 5%;
+    }
+}
+
+/* 第二層 */
+#layer2 {
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 30px;
+
+    .layer2-1 {
+        width: 25%;
+    }
+
+    .layer2-3 {
+        width: 25%;
+    }
+
+    .layer2-2 {
+        // display: inline-block;
+        font-family: "Noto Sans TC", serif;
+        font-size: 1.5vw;
+        position: relative;
+        width: 50%;
+        padding: 0 30px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .layer2-text {
+            color: #464646;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+
+            #text1 {
+                margin: 50px 0 35px 50px;
+                text-align: left;
+                letter-spacing: 3px;
+            }
+
+            #text2 {
+                text-align: center;
+                letter-spacing: 3px;
+                margin: 50px 0;
+            }
+
+            #text3 {
+                margin: 50px 50px 35px 0;
+                text-align: right;
+                letter-spacing: 3px;
+            }
+        }
+    }
+}
+
+
+/* 第三層 */
+#layer3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 50px;
+    height: 100vh;
+    position: relative;
+    margin-bottom: 70px;
+
+    .layer3-2 {
+        position: relative;
+        width: 32%;
+        height: auto;
+
+        .text6 {
+            z-index: 998;
+            position: absolute;
+            width: 50%;
+            height: auto;
+            top: 50.5%;
+            left: 53%;
+            line-height: 200%;
+            letter-spacing: 4px;
+            text-align: center;
+            transform: rotate(5deg);
+            color: #464646;
+            font-size: 0.75vw;
+        }
+    }
+
+    .layer3-3 {
+        width: 32%;
+        color: #464646;
+
+        #bar1 {
+            width: 100%;
+            position: relative;
+
+            #bar1-1 {
+                width: 9%;
+                position: absolute;
+                top: -20px;
+                left: 26%;
+            }
+
+            #bar1-2 {
+                width: 9%;
+                position: absolute;
+                top: -20px;
+                left: 38%;
+            }
+
+            #bar1-3 {
+                width: 9%;
+                position: absolute;
+                top: -20px;
+                left: 50.5%;
+            }
+
+            #bar1-4 {
+                width: 9%;
+                position: absolute;
+                top: -20px;
+                left: 62%;
+            }
+
+            #text3-3-1 {
+                position: absolute;
+                top: -15px;
+                left: 28%;
+                font-family: "Noto Sans TC", serif;
+                font-size: 1.55vw;
+                font-weight: bold;
+            }
+
+            #text3-3-2 {
+                position: absolute;
+                top: -15px;
+                left: 39.5%;
+                font-family: "Noto Sans TC", serif;
+                font-size: 1.55vw;
+                font-weight: bold;
+            }
+
+            #text3-3-3 {
+                position: absolute;
+                top: -15px;
+                left: 52%;
+                font-family: "Noto Sans TC", serif;
+                font-size: 1.55vw;
+                font-weight: bold;
+            }
+
+            #text3-3-4 {
+                position: absolute;
+                top: -15px;
+                left: 64%;
+                font-family: "Noto Sans TC", serif;
+                font-size: 1.55vw;
+                font-weight: bold;
+            }
+
+            #layer3-3-img1 {
+                width: 85%;
+                height: 750px;
+                position: absolute;
+                top: 60px;
+                left: 50px;
+            }
+
+            #layer3-3-img2 {
+                position: absolute;
+                width: 150px;
+                top: 50px;
+                right: -20px;
+                transform: rotate(15deg);
+            }
+        }
+
+        #dontai1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+            height: 750px;
+            position: absolute;
+            top: 60px;
+            left: 35px;
+            padding: 60px 5px;
+            overflow: hidden;
+            font-size: 0.85vw;
+
+            .citylogo {
+                width: 5%;
+                margin: 0 5px;
+            }
+
+            .citytext {
+                font-size: 0.85vw;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .layer3-4 {
+        position: relative;
+        width: 32%;
+
+        #bar2 {
+            color: #464646;
+
+            #bar2-1 {
+                width: 10%;
+                position: absolute;
+                top: -20px;
+                right: 78%;
+            }
+
+            #bar2-2 {
+                width: 9%;
+                position: absolute;
+                top: -20px;
+                right: 65.5%;
+            }
+
+            #bar2-3 {
+                width: 10%;
+                position: absolute;
+                top: -20px;
+                right: 52.5%;
+            }
+
+            #bar2-4 {
+                width: 10%;
+                position: absolute;
+                top: -20px;
+                right: 41%;
+            }
+
+            #bar2-5 {
+                width: 10%;
+                position: absolute;
+                top: -20px;
+                right: 29%;
+            }
+
+            #text3-4-1 {
+                position: absolute;
+                top: -15px;
+                right: 80%;
+                font-family: "Noto Sans TC", serif;
+                font-size: 1.55vw;
+                font-weight: bold;
+            }
+
+            #text3-4-2 {
+                position: absolute;
+                top: -15px;
+                right: 68%;
+                font-family: "Noto Sans TC", serif;
+                font-size: 1.55vw;
+                font-weight: bold;
+            }
+
+            #text3-4-3 {
+                position: absolute;
+                top: -15px;
+                right: 55%;
+                font-family: "Noto Sans TC", serif;
+                font-size: 1.55vw;
+                font-weight: bold;
+            }
+
+            #text3-4-4 {
+                position: absolute;
+                top: -15px;
+                right: 43%;
+                font-family: "Noto Sans TC", serif;
+                font-size: 1.55vw;
+                font-weight: bold;
+            }
+
+            #text3-4-5 {
+                position: absolute;
+                top: -15px;
+                right: 31%;
+                font-family: "Noto Sans TC", serif;
+                font-size: 1.55vw;
+                font-weight: bold;
+            }
+
+            #layer3-4-img1 {
+                width: 85%;
+                height: 750px;
+                position: absolute;
+                top: 60px;
+                right: 50px;
+            }
+
+            #layer3-4-img2 {
+                position: absolute;
+                width: 150px;
+                top: 50px;
+                right: 0px;
+                transform: rotate(15deg);
+            }
+        }
+
+        #dontai2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 90%;
+            height: 750px;
+            position: absolute;
+            top: 60px;
+            right: 30px;
+            padding: 60px 15px;
+            overflow: hidden;
+
+            .citylogo {
+                width: 5%;
+                margin: 0 5px;
+            }
+
+            .citytext {
+                font-size: 0.85vw;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+/* 第四層 */
+#layer4 {
+    width: 100%;
+    height: 58vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 40px;
+    margin-top: 30px;
+
+    .layer4-1 {
+        position: relative;
+        display: inline-block;
+        width: 65%;
+        margin-right: 15px;
+
+        #layer4-1-img1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        #layer4-1-img2 {
+            position: absolute;
+            width: 13%;
+            top: 10px;
+            right: 10px;
+        }
+
+        #layer4-1-img3 {
+            position: absolute;
+            width: 23px;
+            bottom: 33px;
+            right: 540px;
+        }
+
+        #layer4-1-img4 {
+            position: absolute;
+            width: 23px;
+            bottom: 33px;
+            right: 510px;
+        }
+
+        #layer4-1-text1 {
+            position: absolute;
+            bottom: 100px;
+            right: 20px;
+            color: #6a4217;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        #layer4-1-text2 {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            color: #6a4217;
+            font-size: 48px;
+            font-weight: 400;
+            letter-spacing: 3px;
+
+            &:hover {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B;
+            }
+        }
+    }
+
+    .layer4-2 {
+        position: relative;
+        display: inline-block;
+        width: 600px;
+
+        #layer4-2-img1 {
+            width: 100%;
+            height: 100%;
+        }
+
+        #layer4-2-img2 {
+            position: absolute;
+            width: 120px;
+            top: 35px;
+            right: 40px;
+            transform: scaleX(-1);
+        }
+
+        #layer4-2-img3 {
+            position: absolute;
+            width: 100px;
+            top: 40px;
+            right: 100px;
+        }
+
+        #layer4-2-img4 {
+            position: absolute;
+            width: 200px;
+            bottom: -30px;
+            right: 10px;
+        }
+
+        #layer4-2-text1 {
+            position: absolute;
+            top: 35px;
+            left: 50px;
+            font-family: "Noto Sans TC", serif;
+            color: #464646;
+            line-height: 70px;
+            font-size: 48px;
+            text-shadow: white 0.04em 0.04em 0.1em;
+            font-weight: 600;
+        }
+
+        #layer4-2-text2 {
+            position: absolute;
+            top: 120px;
+            left: 50px;
+            font-size: 24px;
+            letter-spacing: 5px;
+            color: #464646;
+        }
+
+        #layer4-2-text3 {
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            font-size: 24px;
+            letter-spacing: 8px;
+            color: #464646;
+        }
+    }
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    // background-color: #E2CA9E;
+
+    p {
+        text-align: center;
+        color: #464646;
+    }
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}

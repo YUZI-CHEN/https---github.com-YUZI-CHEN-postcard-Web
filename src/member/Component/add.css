@@ -1,0 +1,130 @@
+/* 地址下拉式選單 */
+#district-box {
+  display: flex;
+  width:auto;
+  align-items: center;
+  margin: 40px 0;
+  
+}
+#district-box label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  width:8.18vw;
+  height: 4.44vh;
+}
+.dropdown{
+  display: flex;
+}
+
+.dropdown   select {
+  height:4.5vh;
+  padding: 6px 20px;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: black;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+
+  margin-right: 15px;
+  background-color: #CDB17E;
+
+}
+
+#district-box input { 
+  height:4.5vh;
+  padding: 6px 12px;
+  font-size: 1.125rem;
+  line-height: 1.5;
+ 
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+
+  margin-right: 4px;
+  background-color: #CDB17E;
+  width: 480px;
+
+
+}
+#district-box select:focus,
+#district-box  input:focus 
+{
+      outline: none;
+      border-color: #fff;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(109, 52, 20, 0.486);
+ }
+
+
+
+
+@media (max-width:1680px) {
+
+      #district-box label {
+      
+      width:11vw;
+    
+     }
+}
+
+@media (max-width:1440px) {
+
+  #district-box label {
+  
+  width:11vw;
+
+ }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #district-box{
+    display: flex;
+
+    flex-direction: column;
+    align-items: start;
+    margin: 20px 0;
+  }
+  #district-box label {
+   
+    height: 3vh;
+    margin-bottom: 10px;
+  }
+  
+.dropdown   select {
+  height:4.5vh;
+  padding: 6px 8px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: black;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+
+  margin-right: 15px;
+  background-color: #CDB17E;
+
+}
+
+#district-box input { 
+  height: 3.5vh;
+  padding: 6px 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+
+
+  margin-right: 4px;
+  background-color: #CDB17E;
+  width: 250px;
+
+
+}
+#county_box{
+width: 12vw;
+height: 3.5vh;
+}
+#district_box{
+  width: 18vw;
+  height: 3.5vh;
+}
+}
